@@ -1,0 +1,339 @@
+* { padding: 0; margin: 0; }
+
+body {
+	background: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.tudo {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+    box-sizing: border-box;
+} 
+
+.header {
+    width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: #F5F5F5;
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+
+.icon-grafico {
+    width: 1.9vw;
+    padding: 0 5px;
+}
+
+.titulo { 
+    padding: 0;
+    color: #2E2E38;
+    font-size: 1.6vw;
+}
+
+.nav {
+	width: 12%;
+    height: 88vh;
+    min-height: 500px;
+	background-color: #4557BF;
+	padding: 10px 8px;
+	float: left;
+	box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-botao { 
+    text-decoration: none;
+    display: flex; 
+    margin-bottom: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.nav-texto:active { color: #49C7F7;}
+
+.nav-icon {
+    width: 1.3vw;
+    height: 1.3vw;
+    padding: 4px 0 4px 2px;
+    align-self: center;
+}
+
+.nav-texto {
+    color: #FFFFFF;
+    font-size: 1.3vw;
+    padding: 7px 4px;
+
+}
+
+.principal {
+	width:88%;
+    height: 88vh;
+    min-height: 500px;
+	background: #FFFFFF;
+	float: left;
+	box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-principal {
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    position: relative;
+    width: 90%;
+    padding: 1vw;
+    margin-top: 15px;
+    border-radius: 4px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.titulo-principal {
+    text-align: center;
+    padding: 1vw;
+    font-size: 1.7vw;
+}
+
+.form-inicial {
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 2.3vw;
+    box-sizing: border-box;
+
+}
+
+.nomec, .contato, .data {
+    width: calc(100% / 3 - 2vw);
+    height: 1vw;
+    border: none;
+    box-sizing: border-box;
+    margin: 0 2vw 0 -4px;
+    padding: 0.8vw 0.4vw;
+    font-size: 1.1vw;
+    position: relative;
+}
+
+hr {
+    display: inline-block;
+    width: calc(100% / 3 - 2vw);
+    box-sizing: border-box;
+    margin: 0 2vw 0 -4px;
+    position: relative;
+    top: -13px;
+    background-color: #dbdbdb;
+    border: solid 0.5px #dbdbdb;
+}
+
+.nomec:focus ~ .linha1, .contato:focus ~ .linha2, .data:focus ~ .linha3 {border: solid 0.5px #4557BF; background: #4557BF;}
+
+.nomec:focus { outline: none; }
+
+.contato:focus { outline: none; }
+
+.data:focus { outline: none; }
+
+.legend { 
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.fieldset { 
+    padding: 0.7vw 0.6vw 0.7vw 0.6vw;
+    margin-bottom: 1vw;
+    border: solid #d7d7d7 0.15vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.checkbox { 
+    width: 1vw;
+    height: 1vw; 
+    vertical-align: middle;
+    margin: 0.5vw 0 0.5vw 0;
+}
+
+.checkbox-info { 
+    font-size: 1.1vw; 
+    vertical-align: middle;
+}
+
+input[class^="op-"], input[class^="v-"] { 
+    font-size: 1.1vw;  
+    box-sizing: border-box;
+    padding: 0.8vw 0.4vw;
+    height: 1vw;
+    border: none;
+}
+
+label[class^="valor"], label[class^="l-"] {
+    font-size: 1.1vw;  
+    box-sizing: border-box;
+    padding: 0.1vw 0.4vw 0 0.4vw;
+    height: 22px;
+}
+
+.div1 { 
+    display: flex; 
+    text-align: center; 
+    justify-content: center; 
+}
+
+.sdiv1 { 
+    display: inline-block; 
+    align-self: center;
+    margin: 0.6vw 1vw 0.6vw 0;
+}
+
+.sdiv2 { 
+    width: calc(90% / 3 - 2vw);
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    margin: 0.5vw 0 0 1.4vw;
+    padding-top: 0.2vw;
+}
+
+.linha4 { top: 0; margin: 0;}
+
+.op-renda, .linha4, .l-renda { width: 100%; }
+
+.div2 { 
+    width: 90%; 
+    margin: 1vw auto 0vw auto; 
+    text-align: start;
+    padding-left: 1vw; 
+}
+
+input[class^="v-"], label[class^="valor"], .linha5, .linha6, .linha7 { width: calc(100% / 3 - 2vw); margin: 0 2vw 0 -4px; position: relative; }
+
+label[class^="valor"] { 
+    display: inline-block; 
+    text-align: center; 
+    height: auto;
+}
+
+.checkbox-info { margin-right: 1vw; }
+
+.div4 { width: 90%; margin: 1vw auto 0 auto; }
+
+.l-tipo, .l-situ, .l-regiao { display: inline-block; text-align: center; width: calc(100% / 3 - 2vw); margin: 0 2vw 0 -4px; position: relative; }
+ 
+.op1-tipo, .op1-situ, .op1-regiao { 
+    border: #4557BF solid 0.15vw; 
+    font-size: 1.1vw;  
+    box-sizing: border-box;
+    padding: 0.8vw 0.4vw;
+    height: 1vw;
+    width: calc(100% / 3 - 2vw);
+}
+
+.footer {
+	box-sizing: border-box;
+    clear: both;
+	width: 100%;
+	padding: 8.5px 15px;
+	background: #F5F5F5;
+    text-align: end;
+}
+
+.footer-texto {
+    font-size: 12px;
+    color: #5E5E5E;
+}
+
+@media (max-width: 620px){
+    .tudo { width: 100%; }
+
+    .header { padding: 5px; }
+
+    .icon-grafico { width: 2.8vw; }
+
+    .titulo { 
+        font-size: 2.4vw; 
+        padding: 0 1px;
+    }
+
+    .nav-botao {
+        margin-bottom: 0;
+    }
+
+    .nav-icon {
+        width: 2.4vw; 
+        height: 2.4vw;
+        padding: 0; 
+    }
+    
+    .nav-texto {
+        font-size: 2.1vw;
+        padding: 0;
+    }
+
+    .principal { height: 87vh; }
+
+    .header-principal { 
+        width: 90%; 
+        padding-bottom: 1.2vw;
+    }
+
+    .footer { padding: 5px 8px; }
+
+    .footer-texto { font-size: 1.9vw; }
+}
+
+@media (min-width: 621px) and (max-width: 900px){
+    .header { padding: 5px; }
+
+    .titulo { 
+        font-size: 2.2vw;
+        padding: 0; 
+    }
+
+    .icon-grafico { width: 2.6vw; }
+
+    .nav { justify-content: start; }
+
+    .nav-icon { 
+        width: 2.2vw; 
+        height: 2.2vw;
+    }
+
+    .nav-texto {
+        font-size: 2vw;
+        padding: 0px 4px 2px 0px;
+    }
+    
+    .principal { height: 85.2vh; }
+
+    .header-principal { 
+        width: 95%; 
+        padding-bottom: 1.1vw;
+    }
+
+    .footer { padding: 7px 9px; }
+
+    .footer-texto { font-size: 1.4vw; }
+}
+
+@media (max-width: 900px){
+	.nav{
+		width: 100%;
+        height: auto;
+        min-height: 10px;
+        padding: 8px;
+    }
+    .nav-botao {
+        display: inline-block;
+        margin: 0 10px 0 0;
+    }
+    .nav-icon { 
+        vertical-align: bottom;
+        padding: 0 0 2px 0;
+    }
+	.principal { width: 100%; }
+}

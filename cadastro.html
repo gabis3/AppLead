@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Lead's</title>
+    <link rel="stylesheet" href="./CSS/cadastro.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="tudo">
+        <header class="header">
+            <img class="icon-grafico"
+                src="./img/grafico-header.png" 
+                alt="icon de gráfico">
+            <h1 class="titulo">Aplification Qualify Lead</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <a class="nav-botao" href="#">
+                    <img class="nav-icon" 
+                        src="./img/icon-nav/icon-home.png" 
+                        alt="icon home">
+                    <span class="nav-texto">Home</span>
+                </a>
+                
+                <a class="nav-botao" href="#">
+                    <img class="nav-icon" 
+                        src="./img/icon-nav/icon-leads.png" 
+                        alt="icon lead's">
+                    <span class="nav-texto">+Lead's</span>
+                </a>
+
+                <a class="nav-botao" href="#">
+                    <img class="nav-icon" 
+                        src="./img/icon-nav/icon-simulador.png" 
+                        alt="icon simulador">
+                    <span class="nav-texto">Simulador</span>
+                </a>
+                
+                <a class="nav-botao" href="#">
+                    <img class="nav-icon" 
+                        src="./img/icon-nav/icon-consultar.png" 
+                        alt="icon consultar">
+                    <span class="nav-texto">Consultar</span>
+                </a>
+                
+                <a class="nav-botao" href="#">
+                    <img class="nav-icon" 
+                        src="./img/icon-nav/icon-resumo.png" 
+                        alt="icon resumo">
+                    <span class="nav-texto">Resumo</span>
+                </a>
+            </ul>
+        </nav>
+        <main class="principal">
+            <div class="main-principal">
+                <h1 class="titulo-principal">New Lead Registration</h1>
+                <form action="">
+                    <div class="form-inicial">
+                        <input class="nomec" type="text" placeholder="*Nome Comprador" autofocus>
+                        <input class="contato" type="text" placeholder="*Contato">
+                        <input class="data" type="date" min="2021-01-01">
+                        <hr class="linha1">
+                        <hr class="linha2">
+                        <hr class="linha3">
+                    </div>
+                    
+                    <fieldset class="fieldset">
+                        <legend class="legend">Customer Origin</legend>
+
+                        <input class="checkbox" type="checkbox" name="chncont" id="chncont">
+                        <label class="checkbox-info" for="chncont">Se o Lead não foi de origem de seus contatos, marque esta opção!</label>
+                    </fieldset>
+    
+                    <fieldset class="fieldset">
+                        <legend class="legend">Income and Own Resources</legend>
+                        
+                        <div class="div1">
+                            <div class="sdiv1">    
+                                <input class="checkbox" type="checkbox" name="chcpf" id="chcpf">
+                                <label class="checkbox-info" for="chcpf">Escritura de imóvel registrado no meu C.P.F. nesta cidade!</label>
+                            </div>
+                            <div class="sdiv2">
+                                <input class="op-renda" list="origem-renda" name="op-renda" id="op-renda">
+                                <datalist id="origem-renda">
+                                    <option value="Carteira Assinada">
+                                </datalist>
+                                <hr class="linha4">
+                                <label class="l-renda" for="op-renda">Origem da Renda</label>
+                            </div>
+                        </div>
+                        <div class="div2">
+                            <input class="v-renda" type="number" name="vrenda" id="vrenda" min="0">
+                            <input class="v-fgts" type="number" name="vfgts" id="vfgts" min="0">
+                            <input class="v-sinal" type="number" name="vsinal" id="vsinal" min="0">
+                            <hr class="linha5">
+                            <hr class="linha6">
+                            <hr class="linha7">
+                            <label class="valor-renda" for="vrenda">Renda Bruta</label>
+                            <label class="valor-fgts" for="vfgts">Saldo FGTS Atual</label>
+                            <label class="valor-sinal" for="vsinal">Sinal/Ato</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="fieldset">
+                        <legend class="legend">Customer Profile</legend>
+                        <div class="div3">
+                            <input class="checkbox" type="checkbox" name="chirpf" id="chirpf">
+                            <label class="checkbox-info" for="chirpf">IRPF Declarado!</label>
+
+                            <input class="checkbox" type="checkbox" name="chpgf" id="chpgf">
+                            <label class="checkbox-info" for="chpgf">Está pagando financiamento Veículo, Emprestimo, Imóveis...!</label>
+                        </div>
+                        <div class="div4">
+
+                            <label class="l-tipo" for="op-tipo">Tipo de Imóvel</label>
+                            <label class="l-situ" for="op-situ">Situação do Imóvel</label>        
+                            <label class="l-regiao" for="op-regiao">Região</label>
+                                                        
+
+                            <input class="op1-tipo" list="tipo-imovel" name="op-tipo" id="op-tipo">
+                            <datalist id="tipo-imovel">
+                                <option value="Casa">
+                            </datalist>
+                            <input class="op1-situ" list="situ-imovel" name="op-situ" id="op-situ">
+                            <datalist id="situ-imovel">
+                                <option value="Otimo">
+                            </datalist>
+                            <input class="op1-regiao" list="regiao" name="op-regiao" id="op-regiao">
+                            <datalist id="regiao">
+                                <option value="Barueri">
+                            </datalist>
+                        </div>
+                    </fieldset>
+
+                    <input type="submit" value="Salvar">
+                </form>
+
+            </div>
+        </main>
+        <footer class="footer">
+            <span class="footer-texto">©2021 Copyright, todos os direitos reservados - Savio Costa &#128295  Desenvolvido com &#10084 para Xiome
+            </span>
+        </footer>
+    </div>
+</body>
+</html>
